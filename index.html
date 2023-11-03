@@ -37,7 +37,7 @@
                     <div class="menuItems">
                         <li><a href="/">Home</a></li>
                         <li><a href="#work">Work</a></li>
-                        <li><a href="#">About Me</a></li>
+                        <li><a href="#about-me">About Me</a></li>
                         <li><a href="#">Resume</a></li>
                     </div>
                 </div>
@@ -86,8 +86,8 @@
                     </a>
                 <hr id="righttDash">
             </div>
-            <a id="gifts-for-seniors" style="padding-top: 100px; margin-top: -100px;"></a>
             <div class="frame project gifts-for-seniors">
+                <a id="gifts-for-seniors" style="padding-top: 100px; margin-top: -100px;"></a>
                 <img src="media/gifts.png" alt="" width="423">
                 <div class="projectTitle">
                     <h2>Gifts for Seniors</h2>
@@ -101,8 +101,8 @@
                     </div>
                 </div>
             </div>
-            <a id="united-states-dept-of-agriculture" style="padding-top: 100px; margin-top: -100px;"></a>
             <div class="frame project us-d-of-a">
+                <a id="united-states-dept-of-agriculture" style="padding-top: 100px; margin-top: -100px;"></a>
                 <img src="media/usda.png" alt="" width="423">
                 <div class="projectTitle">
                     <h2>US Dept. of Agriculture</h2>
@@ -117,23 +117,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div id="highlightedWork">
-                <div id="gifts" class="frame projectDescription">
-                    <h2>Gifts for Seniors</h2>
-                    <p>Our team partnered with Gifts for Seniors non-profit. We hoped to create a design that provided
-                        the pertinent information about the mission and the ways that people can assist them. We focused
-                        on structuring the information and bringing the main ways people can assist the mission to the forefront of the websites design.
-                    </p>
-                </div>
-                <div id="usda" class="frame projectDescription">
-                    <h2>USDA Government Website Redesign</h2>
-                    <p>Our team chose United States Department of Agriculture's website to redesign. We redesigned USDA website
-                        because of its vast variety of information that needed organizational improvements for a better user experience.
-                        We conducted usability testing on the current design, and with our findings, prototyped a new layout. Through 
-                        additional usability testing, we iterated on our original redesign to make it as clear and easy to navigate as possible.
-                    </p>
-                </div>
-            </div> -->
             <div class="aboutMeTitle">
                 <hr id="leftDash">
                     <a id="about-me" style="padding-top: 100px; margin-top: -100px;">
@@ -141,10 +124,10 @@
                     </a>
                 <hr id="righttDash">
             </div>
-            <div class="frame hero">
+            <div class="frame hero portrait">
                 <img src="media/me.jpg" alt="Portrait of Ben">
             </div>
-            <div class="frame">
+            <div class="frame aboutMeDescription">
                 <h1 class="title">Ben Larson: (Verb)</h1>
                     <p>
                         My about me section
@@ -176,34 +159,36 @@
                 </div>
             </div>
             <div class="contactForm frame">
-                <h2>Name</h2>
-                <div class="formGroup">
-                    <label for="firstName">First</label>
-                    <input type="text" name="First" id="firstName">
-                </div>
-                <div class="formGroup">
-                    <label for="lastName">Name</label>
-                    <input type="text" name="Last" id="lastName">
-                </div>
-                <div class="formGroup">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="formGroup">
-                    <label for="phone">Phone</label>
-                    <input type="tel" name="phone" id="phone">
-                </div>
-                <div class="formGroup">
-                    <label for="subject">Subject</label>
-                    <input type="text" name="subject" id="subject">
-                </div>
-                <div class="formGroup">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" placeholder="What would you like to write?" class="buttons"></textarea>
-                </div>
-                <div class="formGroup">
-                    <input type="submit" value="Submit" class="buttons">
-                </div>
+                <form action="" id="contactSubmitForm">
+                    <h2>Want to reach out?</h2>
+                    <div class="formGroup">
+                        <label for="firstName">First <span class="formRequired">(Required)</span></label>
+                        <input type="text" name="First" id="firstName">
+                    </div>
+                    <div class="formGroup">
+                        <label for="lastName">Last <span class="formRequired">(Required)</span></label>
+                        <input type="text" name="Last" id="lastName">
+                    </div>
+                    <div class="formGroup">
+                        <label for="email">Email <span class="formRequired">(Required)</span></label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="formGroup">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="formGroup">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject">
+                    </div>
+                    <div class="formGroup">
+                        <label for="message">Message <span class="formRequired">(Required)</span></label>
+                        <textarea name="message" id="message" placeholder="What would you like to write?" class="buttons"></textarea>
+                    </div>
+                    <div class="formGroup">
+                        <input type="submit" value="Submit" class="buttons">
+                    </div>
+                </form>
             </div>
         </section>
         <footer id="footer">

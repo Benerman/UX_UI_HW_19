@@ -1,47 +1,39 @@
 
-$(document).ready(function(){
-    $("a").on('click', function(event) {
-  
-      if (this.hash !== "") {
-        event.preventDefault();
-  
-        var hash = this.hash;
-  
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-  
-          window.location.hash = hash;
-        });
-      } 
-    });
-  });
-
-
-
-$(".project").on("click", function(){
-    console.log(this);
-    $("#highlightedWork").slideDown(200)
-    if ($(this).hasClass("gifts-for-seniors") ) {
-        console.log("has Class gifts-for-seniors")
-        $("#gifts").css("postition", "relative");
-        $("#gifts").css("opacity", "1");
-        
-        $("#usda").css("postition", "absolute");
-        $("#usda").css("opacity", "0");
-
-        $("#gifts").css("display", "flex");
-        $("#usda").css("display", "none");
-    } else {
-        console.log("else")
-        $("#usda").css("opacity", "1");
-        $("#gifts").css("opacity", "0");
-        $("#gifts").css("postition", "absolute");
-        $("#usda").css("postition", "relative");
-        $("#gifts").css("display", "none");
-        $("#usda").css("display", "flex");
-        
-    }
-    $("#highlightedWork").css("position", "relative");
-    $("#highlightedWork").css("opacity", "1");
+$(".menuItems").find("a").on("click", function() {
+    console.log(this)
+    $(".checkbox").prop("checked",false);
 });
+
+
+
+$("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+    event.preventDefault();
+
+    var hash = this.hash;
+
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+        window.location.hash = hash;
+    });
+    } 
+});
+
+
+// $('#contactSubmitForm').on("submit", function(e) {
+//     e.preventDefault();
+//     var first = document.getElementById('firstName');
+//     var last = document.getElementById('lastName');
+//     var email = document.getElementById('email');
+//     var phone = document.getElementById('phone');
+//     var subject = document.getElementById('subject');
+//     var message = document.getElementById('message');
+
+//     if (.value ==) {
+//         ('border-color', 'red');
+//     }
+
+// });

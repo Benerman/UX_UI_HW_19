@@ -298,7 +298,15 @@ body {
     opacity: 0;
 }
 
+.portrait {
+    padding: 0 0;
+    width: 99%;
+    height: 94%;
+}
 
+.aboutMeDescription {
+    width: 72%;
+}
 
 .contactDetails {
     grid-column: span 3;
@@ -312,14 +320,25 @@ body {
     gap: 25px;
 
 }
+
+.contactDetails h1, .contactDetails h2, .contactDetails p {
+    font-family: 'Lato', sans-serif;
+}
 .contactDetails h1 {
+    font-size: 40px;
 }
 .contactDetails h2 {
+    font-size: 32px;
 }
 .contactDetails p {
+    font-size: 22px;
 }
 .contactDetails .socials {
     /* change color to black */
+}
+
+#contactSubmitForm {
+    width: 100%;
 }
 
 .contactForm {
@@ -330,7 +349,7 @@ body {
 .contactForm .formGroup {
     width: 90%;
     margin: 0 auto;
-    padding: 2%;
+    padding: 5px;
     display: flex;
     flex-direction: column;
 }
@@ -347,7 +366,8 @@ body {
 }
 .contactForm label {
     font-family: 'Lato', 'san-serif';
-    font-size: 22px;
+    font-size: 28px;
+    padding-bottom: 5px;
 }
 .contactForm input[type=text],
 .contactForm input[type=email],
@@ -357,6 +377,7 @@ body {
     border: 4px solid var(--Edge-Blue, #2E316C);
     background: #FFF;
     box-shadow: 3px 3px 0px 0px #276CC9;
+    height: 20px;
 }
 
 .contactForm input[type=submit] {
@@ -382,6 +403,12 @@ body {
 }
 .contactForm textarea {
     height: 100px;
+}
+
+.formRequired {
+    font-size: 14px;
+    font-style: italic;
+    color: #333
 }
 
 #footer {
@@ -535,19 +562,19 @@ transition: transform 0.4s ease-in-out;
     color: black;
 }
 
-.mobileMenu input[type="checkbox"]:focus ~ .menuItems {
+.mobileMenu input[type="checkbox"]:checked ~ .menuItems {
     transform: translateX(0%);
 }
 
-.mobileMenu input[type="checkbox"]:focus ~ .hamburgerLines .line1 {
+.mobileMenu input[type="checkbox"]:checked ~ .hamburgerLines .line1 {
     transform: rotate(45deg);
 }
 
-.mobileMenu input[type="checkbox"]:focus ~ .hamburgerLines .line2 {
+.mobileMenu input[type="checkbox"]:checked ~ .hamburgerLines .line2 {
     transform: scaleY(0);
 }
 
-.mobileMenu input[type="checkbox"]:focus ~ .hamburgerLines .line3 {
+.mobileMenu input[type="checkbox"]:checked ~ .hamburgerLines .line3 {
     transform: rotate(-45deg);
 }
 
@@ -569,7 +596,7 @@ transition: transform 0.4s ease-in-out;
         font-size: 44px;
     }
     .frame {
-        grid-column: span 3;
+        grid-column: span 6;
         width: 70%;
         margin: 0 auto;
     }
@@ -577,7 +604,7 @@ transition: transform 0.4s ease-in-out;
         grid-template-columns: 1fr;
     }
     .skills {
-        grid-column: span 3;
+        grid-column: span 6;
     }
     .skills-title h2 {
         font-size: 32px;
@@ -586,7 +613,7 @@ transition: transform 0.4s ease-in-out;
         font-size: 24px;
     }
     .workTitle {
-        grid-column: span 3;
+        grid-column: span 6;
     }
     .workTitle hr {
         /* border-spacing: 1px; */
@@ -603,6 +630,14 @@ transition: transform 0.4s ease-in-out;
     }
     .mobileMenu {
         display: flex;
+    }
+    .contactDetails {
+        grid-column: span 6;
+
+    }
+    .contactForm {
+        grid-column: span 6;
+
     }
 }
 
