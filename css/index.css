@@ -182,13 +182,13 @@ body {
 }
 
 
-.workTitle {
+.workTitle, .aboutMeTitle {
     grid-column: span 6;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.workTitle hr {
+.workTitle hr, .aboutMeTitle hr {
     flex-grow: 1;
     border: 3px dashed black;
     background-color: transparent;
@@ -197,7 +197,7 @@ body {
     height: 0px;
 
 }
-.workTitle h2 {
+.workTitle h2, .aboutMeTitle h2 {
     font-family: 'Silkscreen', sans-serif;
     font-size: 42px;
 }
@@ -299,6 +299,91 @@ body {
 }
 
 
+
+.contactDetails {
+    grid-column: span 3;
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+
+}
+.contactDetails h1 {
+}
+.contactDetails h2 {
+}
+.contactDetails p {
+}
+.contactDetails .socials {
+    /* change color to black */
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contactForm .formGroup {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.contactForm h2 {
+    color: #000;
+    font-family: 'Lato', 'san-serif';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.contactForm p {
+    font-family: 'Lato', 'san-serif';
+}
+.contactForm label {
+    font-family: 'Lato', 'san-serif';
+    font-size: 22px;
+}
+.contactForm input[type=text],
+.contactForm input[type=email],
+.contactForm input[type=tel],
+.contactForm textarea {
+    /* width: 100%; */
+    border: 4px solid var(--Edge-Blue, #2E316C);
+    background: #FFF;
+    box-shadow: 3px 3px 0px 0px #276CC9;
+}
+
+.contactForm input[type=submit] {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 25px;
+    margin: 15px;
+    font-size: 18px;
+    
+    color: #000;
+    border: 10px solid #2E316C;
+    background: #FFF;
+    box-shadow: 8px 8px 0px 0px #276CC9;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.contactForm input[type=submit]:hover {
+    box-shadow: 3px 3px 0px 0px #276CC9;
+    transform: translate(5px, 5px);
+    background-color: #2A91EE;
+    color: white;
+}
+.contactForm textarea {
+    height: 100px;
+}
+
 #footer {
     width: 100%;
     margin: 0 auto;
@@ -355,7 +440,8 @@ body {
 #footer a:hover  {
     text-decoration: underline;
 }
-#footer .socials a:hover  {
+#footer .socials a:hover, 
+.contactDetails .socials a:hover  {
     text-decoration: none;
 }
 
