@@ -308,6 +308,15 @@ body {
     width: 72%;
 }
 
+.aboutMeDescription .title {
+    font-family: 'Silkscreen', sans-serif;
+}
+
+/* .aboutMeDescription h1 {
+    font-family: 'Lato', sans-serif;
+} */
+
+
 .contactDetails {
     grid-column: span 3;
     width: 85%;
