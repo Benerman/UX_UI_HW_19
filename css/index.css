@@ -307,6 +307,9 @@ body {
 .aboutMeDescription {
     /* width: 72%; */
 }
+.aboutMeDescription p {
+    font-size: 22px;
+}
 
 .aboutMeDescription .title {
     font-family: 'Silkscreen', sans-serif;
